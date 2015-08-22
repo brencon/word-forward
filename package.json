@@ -1,0 +1,38 @@
+{
+  "name": "word-forword",
+  "version": "0.0.1",
+  "description": "JavaScript random English word and text generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brencon/word-forword.git"
+  },
+  "keywords": [
+    "english",
+    "random",
+    "word",
+    "text",
+    "node",
+    "javascript"
+  ],
+  "author": "Brendan Conrad <brconrad@symitar.com> (https://twitter.com/symBrendan)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12.6"
+  },
+  "bugs": {
+    "url": "https://github.com/brencon/word-forword/issues"
+  },
+  "homepage": "https://github.com/brencon/word-forword#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "intake": "^0.2.5",
+    "lodash": "^3.10.1"
+  }
+}

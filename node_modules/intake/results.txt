@@ -1,0 +1,58 @@
+
+[0m[0m
+[0m  #addLeadingZeros[0m
+[2K[0G  [32m  √[0m[90m add one leading zero to a single digit[0m
+[2K[0G  [32m  √[0m[90m add a random number of leading zeros[0m
+[2K[0G  [32m  √[0m[90m add one leading zero to a single character[0m
+[2K[0G  [32m  √[0m[90m should only work on a number or string not an object[0m
+[2K[0G  [32m  √[0m[90m should only work on a number or string not an array[0m
+[2K[0G  [32m  √[0m[90m should ignore an empty string[0m
+[2K[0G  [32m  √[0m[90m return string length paramater should be ignored if not a number[0m
+[2K[0G  [32m  √[0m[90m if len is negative no leading zeros should be added[0m
+
+[0m  #formatSSN[0m
+[2K[0G  [32m  √[0m[90m nine-character string of numbers should be XXX-XX-XXXX[0m
+[2K[0G  [32m  √[0m[90m string with letters will not be formatted to SSN[0m
+[2K[0G  [32m  √[0m[90m string already formatted as SSN will not change[0m
+
+[0m  #isEmptyOrUndefined[0m
+[2K[0G  [32m  √[0m[90m object should be undefined[0m
+[2K[0G  [32m  √[0m[90m object should be empty[0m
+[2K[0G  [32m  √[0m[90m string should be empty[0m
+[2K[0G  [32m  √[0m[90m whitespace should be empty[0m
+[2K[0G  [32m  √[0m[90m object should not be empty[0m
+[2K[0G  [32m  √[0m[90m string should not be empty[0m
+[2K[0G  [32m  √[0m[90m number should not be empty[0m
+
+[0m  #isNumeric[0m
+[2K[0G  [32m  √[0m[90m single digit is a number[0m
+[2K[0G  [32m  √[0m[90m single letter is not a number[0m
+[2K[0G  [32m  √[0m[90m number is a number[0m
+[2K[0G  [32m  √[0m[90m sentence is not a number[0m
+[2K[0G  [32m  √[0m[90m numbers and letters combined is not a number[0m
+[2K[0G  [32m  √[0m[90m float is numeric[0m
+[2K[0G  [32m  √[0m[90m multiple decimals in string is not a number[0m
+
+[0m  #toTitleCase - String Formatted to Title Case[0m
+[2K[0G  [32m  √[0m[90m String contents unchanged ignoring minor words[0m
+[2K[0G  [32m  √[0m[90m String contents unchanged[0m
+[2K[0G  [32m  √[0m[90m First character changed to upper case[0m
+[2K[0G  [32m  √[0m[90m First character of each word changed to upper case[0m
+[2K[0G  [32m  √[0m[90m First character in minor word only changed to upper case[0m
+[2K[0G  [32m  √[0m[90m First character in minor word only changed to upper case with minorsToLowerCase true[0m
+[2K[0G  [32m  √[0m[90m First character in minor word only changed to upper case in sentence with minorsToLowerCase true[0m
+[2K[0G  [32m  √[0m[90m Hyphenated word set to title case[0m
+[2K[0G  [32m  √[0m[90m Possessive word set to title case[0m
+[2K[0G  [32m  √[0m[90m Possessive word in sentence set to title case[0m
+[2K[0G  [32m  √[0m[90m Ignored word is ignored[0m
+[2K[0G  [32m  √[0m[90m Ignored word in a different case changed to title case[0m
+
+[0m  #toTitleCase - Does Not Break for Non-Strings[0m
+[2K[0G  [32m  √[0m[90m Number is ignored[0m
+[2K[0G  [32m  √[0m[90m Object is ignored[0m
+[2K[0G  [32m  √[0m[90m Null is ignored[0m
+[2K[0G  [32m  √[0m[90m Undefined is ignored[0m
+
+
+[92m [0m[32m 41 passing[0m[90m (46ms)[0m
+
