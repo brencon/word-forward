@@ -1,6 +1,6 @@
 // ****************************************************************************************************
-// word-forword by Brendan Conrad
-// word-forword may be freely distributed or modified under the MIT license.
+// word-forward by Brendan Conrad
+// word-forward may be freely distributed or modified under the MIT license.
 // ****************************************************************************************************
 
 (function () {
@@ -179,7 +179,7 @@
 	];
 
 	// Constructor
-	function WordForword () {
+	function WordForward () {
   		return this;
 	}
 
@@ -190,7 +190,7 @@
 	//		summary:
 	//			returns a random English word from a static set of words
 	// ****************************************************************************************************
-	WordForword.prototype.word = function(wordType, randomScoreReduction) {
+	WordForward.prototype.word = function(wordType, randomScoreReduction) {
 		// check the wordType
 		if (wordTypes.indexOf(wordType) < 0) {
 			return 'unknown word type';
@@ -234,7 +234,7 @@
 	//		summary:
 	//			returns the list of wordTypes that word-forward makes available
 	// ****************************************************************************************************
-	WordForword.prototype.wordTypes = function() {
+	WordForward.prototype.wordTypes = function() {
 		return wordTypes;
 	};
 	// ****************************************************************************************************
@@ -242,28 +242,28 @@
 	// CommonJS module
 	if (typeof exports !== 'undefined') {
 		if (typeof module !== 'undefined' && module.exports) {
-			exports = module.exports = WordForword;
+			exports = module.exports = WordForward;
 		}
-		exports.WordForword = WordForword;
+		exports.WordForward = WordForward;
 	}
 
 	// Register as an anonymous AMD module
 	if (typeof define === 'function' && define.amd) {
 		define([], function () {
-			return WordForword;
+			return WordForward;
 		});
 	}
 
-	// if there is a importsScrips object define wordForword for worker
+	// if there is a importsScrips object define wordForward for worker
 	if (typeof importScripts !== 'undefined') {
-		wordForword = new WordForword();
+		wordForward = new WordForward();
 	}
 
 	// If there is a window object, that at least has a document property,
-	// instantiate and define wordForword on the window
+	// instantiate and define wordForward on the window
 	if (typeof window === "object" && typeof window.document === "object") {
-		window.WordForword = WordForword;
-		window.wordForword = new WordForword();
+		window.WordForward = WordForward;
+		window.wordForward = new WordForward();
 	}
 
 })();

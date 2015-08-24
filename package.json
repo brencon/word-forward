@@ -1,5 +1,5 @@
 {
-  "name": "word-forword",
+  "name": "word-forward",
   "version": "0.0.1",
   "description": "JavaScript random English word and text generation",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/brencon/word-forword.git"
+    "url": "git://github.com/brencon/word-forward.git"
   },
   "keywords": [
     "english",
@@ -24,9 +24,9 @@
     "node": ">=0.12.6"
   },
   "bugs": {
-    "url": "https://github.com/brencon/word-forword/issues"
+    "url": "https://github.com/brencon/word-forward/issues"
   },
-  "homepage": "https://github.com/brencon/word-forword#readme",
+  "homepage": "https://github.com/brencon/word-forward#readme",
   "devDependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.2.5"
