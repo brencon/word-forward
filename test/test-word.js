@@ -28,6 +28,11 @@
 			var result = wordForward.word('test');
 			expect(result).to.equal('unknown word type');
 		});	
+		it('be empty for an undefined type', function() {
+			var obj;
+			var result = wordForward.word(obj);
+			expect(result).to.equal('unknown word type');
+		});			
 	});
 
 }());
