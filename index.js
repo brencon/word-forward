@@ -261,29 +261,29 @@
 	// ****************************************************************************************************
 	WordForward.prototype.word = function(wordType, randomScoreReduction) {
 		// check the wordType
-		if (wordTypes.indexOf(wordType) < 0) {
-			return 'unknown word type';
-		}
-		if (intake.isEmptyOrUndefined(randomScoreReduction)) {
-			randomScoreReduction = 0;
-		}
 		var anyWord = false;
 		if (intake.isEmptyOrUndefined(wordType)) {
 			anyWord = true;
 		}
-		else {
-			// use lodash to reduce the list to nouns only
-			var matchedWords = _.where(words, { 'types': [{ 'type': wordType }] });
-			// iterate over matched words and keep only those that are obove the random score
-			var randomScore = Math.floor(Math.random() * (100 - randomScoreReduction));
-			var wordsToChooseFrom = [];
-			for (var w = 0; w < matchedWords.length; w++) {
-				var matchedWord = matchedWords[w];
-				for (var t = 0; t < matchedWord.types.length; t++) {
-					var matchedWordType = matchedWord.types[t];
-					if ((matchedWordType.type === wordType) && (matchedWordType.score >= randomScore)) {
-						wordsToChooseFrom.push(matchedWord);
-					}
+		else {		
+			if (wordTypes.indexOf(wordType) < 0) {
+				return 'unknown word type';
+			}
+		}
+		if (intake.isEmptyOrUndefined(randomScoreReduction)) {
+			randomScoreReduction = 0;
+		}
+		// use lodash to reduce the list to nouns only
+		var matchedWords = _.where(words, { 'types': [{ 'type': wordType }] });
+		// iterate over matched words and keep only those that are obove the random score
+		var randomScore = Math.floor(Math.random() * (100 - randomScoreReduction));
+		var wordsToChooseFrom = [];
+		for (var w = 0; w < matchedWords.length; w++) {
+			var matchedWord = matchedWords[w];
+			for (var t = 0; t < matchedWord.types.length; t++) {
+				var matchedWordType = matchedWord.types[t];
+				if ((matchedWordType.type === wordType) && (matchedWordType.score >= randomScore)) {
+					wordsToChooseFrom.push(matchedWord);
 				}
 			}
 		}
