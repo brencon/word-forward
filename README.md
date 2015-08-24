@@ -17,7 +17,9 @@ This module generates a random English word from a custom dictionary. Word selct
 `bower install word-forward -S`
 
 ## Tests
-`npm test`
+`grunt` - run all dev modules
+`npm test` - run mocha tests
+`npm run cover` - run istanbul code coverage
 
 ## Code Coverage
 Code coverage is maintained using [Istanbul](http://gotwarlost.github.io/istanbul/) with [Coveralls](https://coveralls.io) reporting.
@@ -33,9 +35,6 @@ Updates and discussions about this module can be found [@symBrendan on Twitter](
 
 ##Versioning
 For transparency into a common release cycle to strive toward maintaining backward compatibility, word-forward is maintained under [the Semantic Versioning guidelines](http://semver.org/).
-
-###Versions
-0.0.1 - Initial release
 
 ## Creator
 
