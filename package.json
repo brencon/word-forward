@@ -4,7 +4,8 @@
   "description": "JavaScript random English word and text generation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
   "homepage": "https://github.com/brencon/word-forward#readme",
   "devDependencies": {
     "chai": "^3.2.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.18",
     "mocha": "^2.2.5"
   },
   "dependencies": {
