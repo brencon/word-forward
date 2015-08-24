@@ -28,7 +28,6 @@
 			var result = wordForward.word('test');
 			expect(result).to.equal('unknown word type');
 		});	
-		//var randomWord = 
 	});
 
 }());
