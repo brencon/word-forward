@@ -18,7 +18,9 @@ This module generates a random English word from a custom dictionary. Word selct
 
 ## Tests
 `grunt` - run all dev modules
+
 `npm test` - run mocha tests
+
 `npm run cover` - run istanbul code coverage
 
 ## Code Coverage
