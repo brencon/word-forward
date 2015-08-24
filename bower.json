@@ -1,0 +1,31 @@
+{
+  "name": "word-forward",
+  "main": "index.js",
+  "version": "0.0.3",
+  "homepage": "https://github.com/brencon/word-forward",
+  "authors": [
+    "brencon <brconrad@symitar.com>"
+  ],
+  "description": "JavaScript random English word and text generation",
+  "moduleType": [
+    "amd",
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "english",
+    "random",
+    "word",
+    "text",
+    "node",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
