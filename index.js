@@ -21,10 +21,23 @@
 				},
 				{
 					'type': 'verb',
-					'score': 75
+					'score': 25
 				},
 			]
 		},
+		{
+			'word': 'black',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 75
+				},
+				{
+					'type': 'adjective',
+					'score': 25
+				},				
+			]
+		},		
 		{
 			'word': 'centipede',
 			'types': [
@@ -48,6 +61,19 @@
 			]
 		},
 		{
+			'word': 'cup',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 85
+				},
+				{
+					'type': 'verb',
+					'score': 15
+				},
+			]
+		},		
+		{
 			'word': 'good',
 			'types': [
 				{
@@ -56,7 +82,24 @@
 				},
 				{
 					'type': 'noun',
-					'score': 35
+					'score': 10
+				}
+			]
+		},
+		{
+			'word': 'in',
+			'types': [
+				{
+					'type': 'preposition',
+					'score': 87
+				},
+				{
+					'type': 'adverb',
+					'score': 10
+				},
+				{
+					'type': 'adjective',
+					'score': 3
 				}
 			]
 		},		
@@ -130,6 +173,19 @@
 			]
 		},
 		{
+			'word': 'soup',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 92
+				},
+				{
+					'type': 'verb',
+					'score': 8
+				}
+			]
+		},		
+		{
 			'word': 'the',
 			'types': [
 				{
@@ -143,23 +199,36 @@
 			]
 		},
 		{
+			'word': 'to',
+			'types': [
+				{
+					'type': 'preposition',
+					'score': 92
+				},
+				{
+					'type': 'adverb',
+					'score': 8
+				}
+			]
+		},		
+		{
 			'word': 'up',
 			'types': [
 				{
 					'type': 'adverb',
-					'score': 88
+					'score': 65
 				},
 				{
 					'type': 'preposition',
-					'score': 65
+					'score': 25
 				},	
 				{
 					'type': 'adjective',
-					'score': 25
+					'score': 7
 				},
 				{
 					'type': 'noun',
-					'score': 10
+					'score': 3
 				}		
 			]
 		},		
@@ -236,6 +305,18 @@
 	// ****************************************************************************************************
 	WordForward.prototype.wordTypes = function() {
 		return wordTypes;
+	};
+	// ****************************************************************************************************
+
+	// ****************************************************************************************************
+	// businessName
+	// ****************************************************************************************************
+	//		args: 
+	//		summary:
+	//			returns a [noun] [preposition] [noun]
+	// ****************************************************************************************************
+	WordForward.prototype.businessName = function() {
+		return intake.toTitleCase(this.word('noun') + ' ' + this.word('preposition') + ' ' + this.word('noun'), true);
 	};
 	// ****************************************************************************************************
 
