@@ -9,7 +9,7 @@
 	var intake = new Intake();
 	var _ = require('lodash');
 
-	var wordTypes = ['adjective', 'adverb', 'definitive article', 'noun', 'number', 'preposition', 'verb']
+	var wordTypes = ['adjective', 'adverb', 'definitive article', 'noun', 'number', 'preposition', 'verb'];
 
 	var words = [
 		{
@@ -273,13 +273,12 @@
 		if (intake.isEmptyOrUndefined(randomScoreReduction)) {
 			randomScoreReduction = 0;
 		}
-		// use lodash to reduce the list to nouns only
-		var matchedWords = _.where(words, { 'types': [{ 'type': wordType }] });
+		var filteredWords = (anyWord) ? words : _.where(words, { 'types': [{ 'type': wordType }] });
 		// iterate over matched words and keep only those that are obove the random score
 		var randomScore = Math.floor(Math.random() * (100 - randomScoreReduction));
 		var wordsToChooseFrom = [];
-		for (var w = 0; w < matchedWords.length; w++) {
-			var matchedWord = matchedWords[w];
+		for (var w = 0; w < filteredWords.length; w++) {
+			var matchedWord = filteredWords[w];
 			for (var t = 0; t < matchedWord.types.length; t++) {
 				var matchedWordType = matchedWord.types[t];
 				if ((matchedWordType.type === wordType) && (matchedWordType.score >= randomScore)) {
