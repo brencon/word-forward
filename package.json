@@ -1,6 +1,6 @@
 {
   "name": "word-forward",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JavaScript random English word and text generation",
   "main": "index.js",
   "scripts": {
@@ -37,9 +37,5 @@
     "grunt-mocha-test": "^0.12.7",
     "istanbul": "^0.3.18",
     "mocha": "^2.2.5"
-  },
-  "dependencies": {
-    "intake": "^0.2.5",
-    "lodash": "^3.10.1"
   }
 }

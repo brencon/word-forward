@@ -5,10 +5,6 @@
 
 (function () {
 
-	var Intake = require('intake');
-	var intake = new Intake();
-	var _ = require('lodash');
-
 	var wordTypes = ['adjective', 'adverb', 'definitive article', 'noun', 'number', 'preposition', 'verb'];
 
 	var words = [
@@ -262,7 +258,7 @@
 	WordForward.prototype.word = function(wordType, randomScoreReduction) {
 		// check the wordType
 		var anyWord = false;
-		if (intake.isEmptyOrUndefined(wordType)) {
+		if (!wordType) {
 			anyWord = true;
 		}
 		else {		
@@ -270,10 +266,10 @@
 				return 'unknown word type';
 			}
 		}
-		if (intake.isEmptyOrUndefined(randomScoreReduction)) {
+		if (!randomScoreReduction) {
 			randomScoreReduction = 0;
 		}
-		var filteredWords = (anyWord) ? words : _.where(words, { 'types': [{ 'type': wordType }] });
+		var filteredWords = words;
 		// iterate over matched words and keep only those that are obove the random score
 		var randomScore = Math.floor(Math.random() * (100 - randomScoreReduction));
 		var wordsToChooseFrom = [];
@@ -288,7 +284,7 @@
 		}
 		var matchedWords = (anyWord) ? words : wordsToChooseFrom;
 		var randomWord = matchedWords[Math.floor(Math.random()*matchedWords.length)];
-		var result = intake.isEmptyOrUndefined(randomWord) ? '' : randomWord.word;
+		var result = ((!randomWord) || (randomWord === '')) ? '' : randomWord.word;
 		// expect to find a result but try again if the result is empty
 		// a result should almost always be found if the dictionary and word type scores are large enough
 		return (result === '') ? this.word(wordType, randomScoreReduction++) : result;
@@ -315,7 +311,7 @@
 	//			returns a [noun] [preposition] [noun]
 	// ****************************************************************************************************
 	WordForward.prototype.businessName = function() {
-		return intake.toTitleCase(this.word('noun') + ' ' + this.word('preposition') + ' ' + this.word('noun'), true);
+		return this.word('noun') + ' ' + this.word('preposition') + ' ' + this.word('noun');
 	};
 	// ****************************************************************************************************
 
