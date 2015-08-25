@@ -42,7 +42,33 @@
 					'score': 100
 				}
 			]
-		},		
+		},
+		{
+			'word': 'company',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				}
+			]
+		},
+		{
+			'word': 'contract',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 65
+				},
+				{
+					'type': 'adjective',
+					'score': 25
+				},
+				{
+					'type': 'verb',
+					'score': 10
+				}
+			]
+		},
 		{
 			'word': 'credit',
 			'types': [
@@ -53,7 +79,7 @@
 				{
 					'type': 'verb',
 					'score': 50
-				},
+				}
 			]
 		},
 		{
@@ -66,7 +92,38 @@
 				{
 					'type': 'verb',
 					'score': 15
+				}
+			]
+		},
+		{
+			'word': 'exchange',
+			'types': [
+				{
+					'type': 'verb',
+					'score': 65
 				},
+				{
+					'type': 'noun',
+					'score': 35
+				}
+			]
+		},			
+		{
+			'word': 'financial',
+			'types': [
+				{
+					'type': 'adjective',
+					'score': 100
+				}
+			]
+		},
+		{
+			'word': 'for',
+			'types': [
+				{
+					'type': 'preposition',
+					'score': 100
+				}
 			]
 		},		
 		{
@@ -98,7 +155,16 @@
 					'score': 3
 				}
 			]
-		},		
+		},
+		{
+			'word': 'management',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				}
+			]
+		},
 		{
 			'word': 'nine',
 			'types': [
@@ -143,6 +209,15 @@
 			]
 		},
 		{
+			'word': 'portfolio',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				}
+			]
+		},		
+		{
 			'word': 'red',
 			'types': [
 				{
@@ -152,7 +227,42 @@
 				{
 					'type': 'adjective',
 					'score': 25
-				},				
+				}				
+			]
+		},
+		{
+			'word': 'say',
+			'types': [
+				{
+					'type': 'verb',
+					'score': 95
+				},
+				{
+					'type': 'adverb',
+					'score': 5
+				}
+			]
+		},		
+		{
+			'word': 'security',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 80
+				},
+				{
+					'type': 'adjective',
+					'score': 20
+				}
+			]
+		},
+		{
+			'word': 'sit',
+			'types': [
+				{
+					'type': 'verb',
+					'score': 100
+				}
 			]
 		},
 		{
@@ -194,6 +304,23 @@
 				}			
 			]
 		},
+		{
+			'word': 'time',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 80
+				},
+				{
+					'type': 'adjective',
+					'score': 8
+				},
+				{
+					'type': 'verb',
+					'score': 12
+				}
+			]
+		},		
 		{
 			'word': 'to',
 			'types': [
@@ -239,6 +366,15 @@
 					'type': 'verb',
 					'score': 5
 				},				
+			]
+		},
+		{
+			'word': 'with',
+			'types': [
+				{
+					'type': 'preposition',
+					'score': 100
+				}
 			]
 		}
 	];
