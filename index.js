@@ -33,6 +33,15 @@
 					'score': 25
 				},				
 			]
+		},
+		{
+			'word': 'brickbat',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				}
+			]
 		},		
 		{
 			'word': 'centipede',
@@ -166,6 +175,15 @@
 			]
 		},
 		{
+			'word': 'mondegreen',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				}
+			]
+		},		
+		{
 			'word': 'nine',
 			'types': [
 				{
@@ -175,6 +193,19 @@
 				{
 					'type': 'number',
 					'score': 100
+				}
+			]
+		},		
+		{
+			'word': 'mnemonic',
+			'types': [
+				{
+					'type': 'adjective',
+					'score': 50
+				},
+				{
+					'type': 'noun',
+					'score': 50
 				}
 			]
 		},			
@@ -209,7 +240,38 @@
 			]
 		},
 		{
+			'word': 'one',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				},
+				{
+					'type': 'number',
+					'score': 100
+				}
+			]
+		},		
+		{
 			'word': 'portfolio',
+			'types': [
+				{
+					'type': 'noun',
+					'score': 100
+				}
+			]
+		},
+		{
+			'word': 'protean',
+			'types': [
+				{
+					'type': 'adjective',
+					'score': 100
+				}
+			]
+		},
+		{
+			'word': 'quiddity',
 			'types': [
 				{
 					'type': 'noun',
@@ -365,7 +427,7 @@
 				{
 					'type': 'verb',
 					'score': 5
-				},				
+				}
 			]
 		},
 		{
@@ -373,6 +435,15 @@
 			'types': [
 				{
 					'type': 'preposition',
+					'score': 100
+				}
+			]
+		},
+		{
+			'word': 'xeriscaping',
+			'types': [
+				{
+					'type': 'noun',
 					'score': 100
 				}
 			]
