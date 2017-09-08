@@ -35,7 +35,7 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 ## Community
 Updates and discussions about this module can be found [@symBrendan on Twitter](https://twitter.com/symBrendan).
 
-##Versioning
+## Versioning
 For transparency into a common release cycle to strive toward maintaining backward compatibility, word-forward is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
 ## Creator
@@ -44,5 +44,5 @@ For transparency into a common release cycle to strive toward maintaining backwa
 
 - <https://twitter.com/symBrendan>
 
-##License
+## License
 This project is licensed under the terms of the MIT license.
