@@ -361,6 +361,15 @@ var words = [
       ]
    },
    {
+    'word': 'snowflake',
+    'types': [
+      {
+        'type': 'noun',
+        'score': 100
+      }
+    ]
+  },
+   {
       'word': 'soup',
       'types': [
          {
