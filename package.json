@@ -1,6 +1,6 @@
 {
   "name": "word-forward",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JavaScript random English word and text generation",
   "main": "index.js",
   "scripts": {
