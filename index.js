@@ -37,7 +37,7 @@ var dictionary = require('./dictionary');
          randomScoreReduction = 0;
       }
       var filteredWords = words;
-      // iterate over matched words and keep only those that are obove the random score
+      // iterate over matched words and keep only those that are above the random score
       var randomScore = Math.floor(Math.random() * (100 - randomScoreReduction));
       var wordsToChooseFrom = [];
       for (var w = 0; w < filteredWords.length; w++) {
