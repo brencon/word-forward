@@ -6,7 +6,7 @@
 JavaScript random English word and text generation
 
 ## Overview
-This module generates a random English word from a custom dictionary. Word selction can be filtered by word type, with an internal scoring system determining the more common usages of the word. This logic hopes to produce more realisitc outcomes while providing elements of randomness to assist with content generation.
+This module generates a random English word from a custom dictionary. Word selction can be filtered by word type, with an internal scoring system determining the more common usages of the word. This logic hopes to produce more realistic outcomes while providing elements of randomness to assist with content generation.
 
 ## Installation
 
