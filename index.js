@@ -4,7 +4,6 @@
 // ****************************************************************************************************
 
 var dictionary = require('./dictionary');
-var intake = new (require('intake'))();
 
 (function () {
 
