@@ -4,6 +4,7 @@
 // ****************************************************************************************************
 
 var dictionary = require('./dictionary');
+var intake = new (require('intake'))();
 
 (function () {
 
@@ -22,7 +23,7 @@ var dictionary = require('./dictionary');
    //		summary:
    //			returns a random English word from a static set of words
    // ****************************************************************************************************
-   WordForward.prototype.word = function (wordType, randomScoreReduction) {
+   WordForward.prototype.word = function (wordType) {
       // check the wordType
       var anyWord = false;
       if (!wordType) {
@@ -33,12 +34,9 @@ var dictionary = require('./dictionary');
             return 'unknown word type';
          }
       }
-      if (!randomScoreReduction) {
-         randomScoreReduction = 0;
-      }
       var filteredWords = words;
       // iterate over matched words and keep only those that are above the random score
-      var randomScore = Math.floor(Math.random() * (100 - randomScoreReduction));
+      var randomScore = Math.floor(Math.random() * 100);
       var wordsToChooseFrom = [];
       for (var w = 0; w < filteredWords.length; w++) {
          var matchedWord = filteredWords[w];
@@ -51,10 +49,7 @@ var dictionary = require('./dictionary');
       }
       var matchedWords = (anyWord) ? words : wordsToChooseFrom;
       var randomWord = matchedWords[Math.floor(Math.random() * matchedWords.length)];
-      var result = ((!randomWord) || (randomWord === '')) ? '' : randomWord.word;
-      // expect to find a result but try again if the result is empty
-      // a result should almost always be found if the dictionary and word type scores are large enough
-      return (result === '') ? this.word(wordType, randomScoreReduction++) : result;
+      return randomWord.word;
    };
    // ****************************************************************************************************
 
