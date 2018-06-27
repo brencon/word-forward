@@ -2,6 +2,15 @@ var wordTypes = ['adjective', 'adverb', 'definitive article', 'noun', 'number', 
 
 var words = [
    {
+    'word': 'backstairs',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+   },
+   {
       'word': 'bank',
       'types': [
          {
@@ -107,6 +116,19 @@ var words = [
       ]
    },
    {
+    'word': 'edentate',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 65
+      },
+      {
+        'type': 'noun',
+        'score': 35
+      }
+    ]
+   },
+   {
       'word': 'exchange',
       'types': [
          {
@@ -138,10 +160,45 @@ var words = [
       ]
    },
    {
+    'word': 'farouche',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+   },
+   {
+      'word': 'five',
+      'types': [
+         {
+            'type': 'noun',
+            'score': 100
+         },
+         {
+            'type': 'number',
+            'score': 100
+         }
+      ]
+   },
+   {
       'word': 'for',
       'types': [
          {
             'type': 'preposition',
+            'score': 100
+         }
+      ]
+   },
+   {
+      'word': 'four',
+      'types': [
+         {
+            'type': 'noun',
+            'score': 100
+         },
+         {
+            'type': 'number',
             'score': 100
          }
       ]
@@ -264,6 +321,15 @@ var words = [
       ]
    },
    {
+      'word': 'pellucid',
+      'types': [
+         {
+            'type': 'adjective',
+            'score': 100
+         }
+      ]
+   },
+   {
       'word': 'portfolio',
       'types': [
          {
@@ -317,6 +383,15 @@ var words = [
       ]
    },
    {
+    'word': 'scupper',
+    'types': [
+      {
+        'type': 'noun',
+        'score': 100
+      }
+    ]
+   },
+   {
       'word': 'security',
       'types': [
          {
@@ -368,7 +443,7 @@ var words = [
         'score': 100
       }
     ]
-  },
+   },
    {
       'word': 'soup',
       'types': [
@@ -383,6 +458,15 @@ var words = [
       ]
    },
    {
+      'word': 'summerize',
+      'types': [
+         {
+            'type': 'verb',
+            'score': 100
+         }
+      ]
+   },
+   {
       'word': 'the',
       'types': [
          {
@@ -392,6 +476,19 @@ var words = [
          {
             'type': 'adverb',
             'score': 1
+         }
+      ]
+   },
+   {
+      'word': 'three',
+      'types': [
+         {
+            'type': 'noun',
+            'score': 100
+         },
+         {
+            'type': 'number',
+            'score': 100
          }
       ]
    },
@@ -422,6 +519,19 @@ var words = [
          {
             'type': 'adverb',
             'score': 8
+         }
+      ]
+   },
+   {
+      'word': 'two',
+      'types': [
+         {
+            'type': 'noun',
+            'score': 100
+         },
+         {
+            'type': 'number',
+            'score': 100
          }
       ]
    },
