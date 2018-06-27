@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/brencon/word-forward.svg?branch=master)](https://travis-ci.org/brencon/word-forward) [![Coverage Status](https://coveralls.io/repos/brencon/word-forward/badge.svg?branch=master&service=github)](https://coveralls.io/github/brencon/word-forward?branch=master)
+[![Build Status](https://travis-ci.org/brencon/word-forward.svg?branch=master)](https://travis-ci.org/brencon/word-forward) [![Coverage Status](https://coveralls.io/repos/github/brencon/word-forward/badge.svg?branch=master)](https://coveralls.io/github/brencon/word-forward?branch=master)
 
 [![NPM](https://nodei.co/npm/word-forward.png)](https://nodei.co/npm/word-forward/)
 
