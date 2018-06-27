@@ -1,21 +1,21 @@
 
 [0m[0m
 [0m  #businessName[0m
-[2K[0G  [32m  √[0m[90m returns a non-empty array[0m
+  [32m  √[0m[90m returns a non-empty array[0m
 
 [0m  #businessName[0m
-[2K[0G  [32m  √[0m[90m is three words[0m
+  [32m  √[0m[90m is three words[0m
 
 [0m  #wordTypes[0m
-[2K[0G  [32m  √[0m[90m returns a non-empty array[0m
+  [32m  √[0m[90m returns a non-empty array[0m
 
 [0m  #word[0m
-[2K[0G  [32m  √[0m[90m return a random string[0m
-[2K[0G  [32m  √[0m[90m return a random noun[0m
-[2K[0G  [32m  √[0m[90m return a random number[0m
-[2K[0G  [32m  √[0m[90m random word from a random word type[0m
-[2K[0G  [32m  √[0m[90m be empty for unknown type[0m
+  [32m  √[0m[90m return a random string[0m
+  [32m  √[0m[90m return a random noun[0m
+  [32m  √[0m[90m return a random number[0m
+  [32m  √[0m[90m random word from a random word type[0m
+  [32m  √[0m[90m be empty for unknown type[0m
 
 
-[92m [0m[32m 8 passing[0m[90m (13ms)[0m
+[92m [0m[32m 8 passing[0m[90m (21ms)[0m
 

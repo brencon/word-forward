@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-    "cover": "nyc --reporter=html --reporter=text mocha"
+    "cover": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -33,9 +34,7 @@
     "coveralls": "^3.0.1",
     "grunt": "^1.0.3",
     "grunt-contrib-jshint": "^1.1.0",
-    "grunt-istanbul": "^0.8.0",
     "grunt-mocha-test": "^0.13.3",
-    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2"
   },
