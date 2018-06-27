@@ -89,6 +89,7 @@ var intake = new (require('intake'))();
 
    // Register as an anonymous AMD module
    /* istanbul ignore if */
+   /* istanbul ignore next */
    if (typeof define === 'function' && define.amd) {
       define([], function () {
          return WordForward;
@@ -104,6 +105,7 @@ var intake = new (require('intake'))();
    // If there is a window object, that at least has a document property,
    // instantiate and define wordForward on the window
    /* istanbul ignore if */
+   /* istanbul ignore next */
    if (typeof window === "object" && typeof window.document === "object") {
       window.WordForward = WordForward;
       window.wordForward = new WordForward();
