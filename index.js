@@ -78,7 +78,9 @@ var intake = new (require('intake'))();
    // ****************************************************************************************************
 
    // CommonJS module
+   /* istanbul ignore else */
    if (typeof exports !== 'undefined') {
+      /* istanbul ignore else */
       if (typeof module !== 'undefined' && module.exports) {
          exports = module.exports = WordForward;
       }
@@ -86,6 +88,7 @@ var intake = new (require('intake'))();
    }
 
    // Register as an anonymous AMD module
+   /* istanbul ignore if */
    if (typeof define === 'function' && define.amd) {
       define([], function () {
          return WordForward;
@@ -93,12 +96,14 @@ var intake = new (require('intake'))();
    }
 
    // if there is a importsScrips object define wordForward for worker
+   /* istanbul ignore if */
    if (typeof importScripts !== 'undefined') {
       wordForward = new WordForward();
    }
 
    // If there is a window object, that at least has a document property,
    // instantiate and define wordForward on the window
+   /* istanbul ignore if */
    if (typeof window === "object" && typeof window.document === "object") {
       window.WordForward = WordForward;
       window.wordForward = new WordForward();
