@@ -46,6 +46,15 @@ var words = [
       ]
    },
    {
+      'word': 'campcraft',
+      'types': [
+         {
+            'type': 'noun',
+            'score': 100
+         }
+      ]
+   },   
+   {
       'word': 'catachresis',
       'types': [
          {
