@@ -200,6 +200,15 @@ var words = [
       ]
    },
    {
+    'word': 'fizgig',
+    'types': [
+      {
+        'type': 'noun',
+        'score': 100
+      }
+    ]
+   },   
+   {
       'word': 'for',
       'types': [
          {
