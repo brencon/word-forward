@@ -46,7 +46,7 @@ var words = [
       ]
    },
    {
-    'word': 'buttery',
+    'word': 'b',
     'types': [
       {
         'type': 'adjective',
@@ -269,6 +269,15 @@ var words = [
          }
       ]
    },
+   {
+      'word': 'kindly',
+      'types': [
+         {
+            'type': 'adverb',
+            'score': 100
+         }
+      ]
+   },   
    {
       'word': 'management',
       'types': [
