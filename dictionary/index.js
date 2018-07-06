@@ -46,6 +46,24 @@ var words = [
       ]
    },
    {
+    'word': 'b',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+   },   
+   {
+      'word': 'campcraft',
+      'types': [
+         {
+            'type': 'noun',
+            'score': 100
+         }
+      ]
+   },   
+   {
       'word': 'catachresis',
       'types': [
          {
@@ -116,6 +134,15 @@ var words = [
       ]
    },
    {
+    'word': 'debonair',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+   },   
+   {
     'word': 'edentate',
     'types': [
       {
@@ -182,6 +209,15 @@ var words = [
       ]
    },
    {
+    'word': 'fizgig',
+    'types': [
+      {
+        'type': 'noun',
+        'score': 100
+      }
+    ]
+   },   
+   {
       'word': 'for',
       'types': [
          {
@@ -233,6 +269,15 @@ var words = [
          }
       ]
    },
+   {
+      'word': 'kindly',
+      'types': [
+         {
+            'type': 'adverb',
+            'score': 100
+         }
+      ]
+   },   
    {
       'word': 'management',
       'types': [
