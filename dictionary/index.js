@@ -125,6 +125,15 @@ var words = [
       ]
    },
    {
+    'word': 'debonair',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+   },   
+   {
     'word': 'edentate',
     'types': [
       {
