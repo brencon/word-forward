@@ -46,6 +46,15 @@ var words = [
       ]
    },
    {
+    'word': 'buttery',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+   },   
+   {
       'word': 'campcraft',
       'types': [
          {
