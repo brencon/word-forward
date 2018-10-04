@@ -375,6 +375,15 @@ var words = [
     ]
   },
   {
+    'word': 'pernicious',
+    'types': [
+      {
+        'type': 'adjective',
+        'score': 100
+      }
+    ]
+  },
+  {
     'word': 'portfolio',
     'types': [
       {
