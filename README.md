@@ -38,6 +38,18 @@ Updates and discussions about this module can be found [@symBrendan on Twitter](
 ## Versioning
 For transparency into a common release cycle to strive toward maintaining backward compatibility, word-forward is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
+### Creating a New Version
+The following commands will create a new version of the module, automatically create a new tag with the same value as the version, push the tags to the remote, and, finally, push the code to the remote.
+
+`npm version patch`
+
+`git push tags`
+
+`git push`
+
+`npm publish`
+
+
 ## Creator
 
 **Brendan Conrad**
