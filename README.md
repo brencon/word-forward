@@ -43,7 +43,7 @@ The following commands will create a new version of the module, automatically cr
 
 `npm version patch`
 
-`git push tags`
+`git push --tags`
 
 `git push`
 
